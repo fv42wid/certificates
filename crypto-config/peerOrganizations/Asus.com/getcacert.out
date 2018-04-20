@@ -1,0 +1,3 @@
+2018/04/19 15:55:50 [INFO] Configuration file location: /home/frank/block/hlf/pcxchg/crypto-config/peerOrganizations/Asus.com/fabric-ca-client-config.yaml
+2018/04/19 15:55:50 [INFO] Stored root CA certificate at /home/frank/block/hlf/pcxchg/crypto-config/peerOrganizations/Asus.com/msp/cacerts/localhost-7102.pem
+2018/04/19 15:55:50 [INFO] Stored intermediate CA certificates at /home/frank/block/hlf/pcxchg/crypto-config/peerOrganizations/Asus.com/msp/intermediatecerts/localhost-7102.pem

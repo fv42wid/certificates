@@ -1,0 +1,250 @@
+2018/04/19 15:55:42 [INFO] Created default configuration file at /home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/fabric-ca-server-config.yaml
+2018/04/19 15:55:42 [INFO] Starting server in home directory: /home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root
+2018/04/19 15:55:42 [INFO] Server Version: 1.1.1-snapshot-e656889
+2018/04/19 15:55:42 [INFO] Server Levels: &{Identity:1 Affiliation:1 Certificate:1}
+2018/04/19 15:55:42 [DEBUG] Making server filenames absolute
+2018/04/19 15:55:42 [DEBUG] Initializing default CA in directory /home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root
+2018/04/19 15:55:42 [DEBUG] Init CA with home /home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root and config {Version:1.1.1-snapshot-e656889 Cfg:{Identities:{AllowRemove:false} Affiliations:{AllowRemove:false}} CA:{Name: Keyfile: Certfile:ca-cert.pem Chainfile:ca-chain.pem} Signing:0xc42030d930 CSR:{CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[frank-VirtualBox localhost] KeyRequest:<nil> CA:0xc4202d9c00 SerialNumber:} Registry:{MaxEnrollments:-1 Identities:[{ Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:0 Attrs:map[hf.Registrar.Roles:peer,orderer,client,user hf.Registrar.DelegateRoles:peer,orderer,client,user hf.Revoker:1 hf.IntermediateCA:1 hf.GenCRL:1 hf.Registrar.Attributes:* hf.AffiliationMgr:1]  }]} Affiliations:map[org2:[department1] org1:[department1 department2]] LDAP:{ Enabled:false URL:ldap://****:****@<host>:<port>/<base> UserFilter:(uid=%s) GroupFilter:(memberUid=%s) Attribute:{[uid member] [{ }] map[groups:[{ }]]} TLS:{false [] { }}  } DB:{ Type:sqlite3 Datasource:fabric-ca-server.db TLS:{false [] { }}  } CSP:0xc4202e7530 Client:<nil> Intermediate:{ParentServer:{ URL: CAName:  } TLS:{Enabled:false CertFiles:[] Client:{KeyFile: CertFile:}} Enrollment:{ Name: Secret:**** Profile: Label: CSR:<nil> CAName: AttrReqs:[]  }} CRL:{Expiry:24h0m0s}}
+2018/04/19 15:55:42 [DEBUG] CA Home Directory: /home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root
+2018/04/19 15:55:42 [DEBUG] Checking configuration file version '1.1.1-snapshot-e656889' against server version: '1.1.1-snapshot-e656889'
+2018/04/19 15:55:42 [DEBUG] Initializing BCCSP: &{ProviderName:SW SwOpts:0xc4202e7590 PluginOpts:<nil> Pkcs11Opts:<nil>}
+2018/04/19 15:55:42 [DEBUG] Initializing BCCSP with software options &{SecLevel:256 HashFamily:SHA2 Ephemeral:false FileKeystore:0xc42031b0e0 DummyKeystore:<nil>}
+2018/04/19 15:55:42 [DEBUG] Initialize key material
+2018/04/19 15:55:42 [DEBUG] Making CA filenames absolute
+2018/04/19 15:55:42 [DEBUG] Root CA certificate request: {CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[frank-VirtualBox localhost] KeyRequest:0xc4203225e0 CA:0xc4202d9c00 SerialNumber:}
+2018/04/19 15:55:42 [INFO] generating key: &{A:ecdsa S:256}
+2018/04/19 15:55:42 [DEBUG] generate key from request: algo=ecdsa, size=256
+2018/04/19 15:55:43 [INFO] encoded CSR
+2018/04/19 15:55:43 [DEBUG] validating configuration
+2018/04/19 15:55:43 [DEBUG] validate local profile
+2018/04/19 15:55:43 [DEBUG] profile is valid
+2018/04/19 15:55:43 [INFO] signed certificate with serial number 138468352746713023864869325194010663441082222455
+2018/04/19 15:55:43 [INFO] The CA key and certificate were generated for CA 
+2018/04/19 15:55:43 [INFO] The key was stored by BCCSP provider 'SW'
+2018/04/19 15:55:43 [INFO] The certificate is at: /home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-cert.pem
+2018/04/19 15:55:43 [DEBUG] Initializing DB
+2018/04/19 15:55:43 [DEBUG] Initializing 'sqlite3' database at '/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/fabric-ca-server.db'
+2018/04/19 15:55:43 [DEBUG] Using sqlite database, connect to database in home (/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/fabric-ca-server.db) directory
+2018/04/19 15:55:43 [DEBUG] Creating SQLite database (/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/fabric-ca-server.db) if it does not exist...
+2018/04/19 15:55:43 [DEBUG] Creating users table if it does not exist
+2018/04/19 15:55:43 [DEBUG] Creating affiliations table if it does not exist
+2018/04/19 15:55:43 [DEBUG] Creating certificates table if it does not exist
+2018/04/19 15:55:43 [DEBUG] Creating properties table if it does not exist
+2018/04/19 15:55:43 [DEBUG] Successfully opened sqlite3 DB
+2018/04/19 15:55:43 [DEBUG] Checking database schema...
+2018/04/19 15:55:43 [DEBUG] Update SQLite schema, if using outdated schema
+2018/04/19 15:55:43 [DEBUG] Upgrade identities table
+2018/04/19 15:55:43 [DEBUG] Creating users table if it does not exist
+2018/04/19 15:55:43 [DEBUG] Upgrade affiliation table
+2018/04/19 15:55:43 [DEBUG] Creating affiliations table if it does not exist
+2018/04/19 15:55:43 [DEBUG] Upgrade certificates table
+2018/04/19 15:55:43 [DEBUG] Creating certificates table if it does not exist
+2018/04/19 15:55:43 [DEBUG] Initializing identity registry
+2018/04/19 15:55:43 [DEBUG] Initialized DB identity registry
+2018/04/19 15:55:43 [DEBUG] DB: Get properties [identity.level affiliation.level certificate.level]
+2018/04/19 15:55:43 [DEBUG] Checking database levels 'map[affiliation.level:0 certificate.level:0 identity.level:0]' against server levels '&{Identity:1 Affiliation:1 Certificate:1}'
+2018/04/19 15:55:43 [DEBUG] Loading identity table
+2018/04/19 15:55:43 [DEBUG] Loading identity 'admin'
+2018/04/19 15:55:43 [DEBUG] DB: Getting identity admin
+2018/04/19 15:55:43 [DEBUG] Max enrollment value verification - User specified max enrollment: 0, CA max enrollment: -1
+2018/04/19 15:55:43 [DEBUG] DB: Add identity admin
+2018/04/19 15:55:43 [DEBUG] Successfully added identity admin to the database
+2018/04/19 15:55:43 [DEBUG] Registered identity: { Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:-1 Attrs:map[hf.Registrar.Roles:peer,orderer,client,user hf.Registrar.DelegateRoles:peer,orderer,client,user hf.Revoker:1 hf.IntermediateCA:1 hf.GenCRL:1 hf.Registrar.Attributes:* hf.AffiliationMgr:1]  }
+2018/04/19 15:55:43 [DEBUG] Successfully loaded identity table
+2018/04/19 15:55:43 [DEBUG] Loading affiliations table
+2018/04/19 15:55:43 [DEBUG] DB: Add affiliation org1
+2018/04/19 15:55:43 [DEBUG] Affiliation 'org1' added
+2018/04/19 15:55:43 [DEBUG] DB: Add affiliation org1.department1
+2018/04/19 15:55:43 [DEBUG] Affiliation 'org1.department1' added
+2018/04/19 15:55:43 [DEBUG] DB: Add affiliation org1.department2
+2018/04/19 15:55:43 [DEBUG] Affiliation 'org1.department2' added
+2018/04/19 15:55:43 [DEBUG] DB: Add affiliation org2
+2018/04/19 15:55:43 [DEBUG] Affiliation 'org2' added
+2018/04/19 15:55:43 [DEBUG] DB: Add affiliation org2.department1
+2018/04/19 15:55:43 [DEBUG] Affiliation 'org2.department1' added
+2018/04/19 15:55:43 [DEBUG] Successfully loaded affiliations table
+2018/04/19 15:55:43 [DEBUG] Checking and performing migration, if needed
+2018/04/19 15:55:43 [DEBUG] Updating database level to &{Identity:1 Affiliation:1 Certificate:1}
+2018/04/19 15:55:43 [INFO] Initialized sqlite3 database at /home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/fabric-ca-server.db
+2018/04/19 15:55:43 [DEBUG] Initializing enrollment signer
+2018/04/19 15:55:43 [DEBUG] validating configuration
+2018/04/19 15:55:43 [DEBUG] validate local profile
+2018/04/19 15:55:43 [DEBUG] profile is valid
+2018/04/19 15:55:43 [DEBUG] validate local profile
+2018/04/19 15:55:43 [DEBUG] profile is valid
+2018/04/19 15:55:43 [DEBUG] validate local profile
+2018/04/19 15:55:43 [DEBUG] profile is valid
+2018/04/19 15:55:43 [DEBUG] CA initialization successful
+2018/04/19 15:55:43 [INFO] Home directory for default CA: /home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root
+2018/04/19 15:55:43 [DEBUG] 1 CA instance(s) running on server
+2018/04/19 15:55:43 [INFO] Listening on http://0.0.0.0:7100
+2018/04/19 15:55:44 [DEBUG] Received request for /enroll
+2018/04/19 15:55:44 [DEBUG] ca.Config: &{Version:1.1.1-snapshot-e656889 Cfg:{Identities:{AllowRemove:false} Affiliations:{AllowRemove:false}} CA:{Name: Keyfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-key.pem Certfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-cert.pem Chainfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-chain.pem} Signing:0xc42030d930 CSR:{CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[frank-VirtualBox localhost] KeyRequest:0xc4203225c0 CA:0xc4202d9c00 SerialNumber:} Registry:{MaxEnrollments:-1 Identities:[{ Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:0 Attrs:map[hf.Registrar.DelegateRoles:peer,orderer,client,user hf.Revoker:1 hf.IntermediateCA:1 hf.GenCRL:1 hf.Registrar.Attributes:* hf.AffiliationMgr:1 hf.Registrar.Roles:peer,orderer,client,user]  }]} Affiliations:map[org1:[department1 department2] org2:[department1]] LDAP:{ Enabled:false URL:ldap://****:****@<host>:<port>/<base> UserFilter:(uid=%s) GroupFilter:(memberUid=%s) Attribute:{[uid member] [{ }] map[groups:[{ }]]} TLS:{false [] { }}  } DB:{ Type:sqlite3 Datasource:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/fabric-ca-server.db TLS:{false [] { }}  } CSP:0xc4202e7530 Client:<nil> Intermediate:{ParentServer:{ URL: CAName:  } TLS:{Enabled:false CertFiles:[] Client:{KeyFile: CertFile:}} Enrollment:{ Name: Secret:**** Profile: Label: CSR:<nil> CAName: AttrReqs:[]  }} CRL:{Expiry:24h0m0s}}
+2018/04/19 15:55:44 [DEBUG] DB: Getting identity admin
+2018/04/19 15:55:44 [DEBUG] DB: Login user admin with max enrollments of -1 and state of 0
+2018/04/19 15:55:44 [DEBUG] DB: identity admin successfully logged in
+2018/04/19 15:55:44 [DEBUG] Processing sign request: id=admin, CommonName=admin, Subject=<nil>
+2018/04/19 15:55:44 [DEBUG] Request is not for a CA signing certificate
+2018/04/19 15:55:44 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/19 15:55:44 [DEBUG] DB: Getting identity admin
+2018/04/19 15:55:44 [DEBUG] Finished processing sign request
+2018/04/19 15:55:44 [DEBUG] DB: Getting identity admin
+2018/04/19 15:55:44 [INFO] signed certificate with serial number 361678744108940390945617678718906953110348789314
+2018/04/19 15:55:44 [DEBUG] DB: Insert Certificate
+2018/04/19 15:55:44 [DEBUG] Saved serial number as hex 3f5a3c5d4809aff9b62dcc6ea87ac6da797e7642
+2018/04/19 15:55:44 [DEBUG] saved certificate with serial number 361678744108940390945617678718906953110348789314
+2018/04/19 15:55:44 [DEBUG] Successfully incremented state for identity admin to 1
+2018/04/19 15:55:44 [INFO] 127.0.0.1:34330 POST /enroll 201 0 "OK"
+2018/04/19 15:55:44 [DEBUG] Received request for /enroll
+2018/04/19 15:55:44 [DEBUG] ca.Config: &{Version:1.1.1-snapshot-e656889 Cfg:{Identities:{AllowRemove:false} Affiliations:{AllowRemove:false}} CA:{Name: Keyfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-key.pem Certfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-cert.pem Chainfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-chain.pem} Signing:0xc42030d930 CSR:{CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[frank-VirtualBox localhost] KeyRequest:0xc4203225c0 CA:0xc4202d9c00 SerialNumber:} Registry:{MaxEnrollments:-1 Identities:[{ Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:0 Attrs:map[hf.Registrar.DelegateRoles:peer,orderer,client,user hf.Revoker:1 hf.IntermediateCA:1 hf.GenCRL:1 hf.Registrar.Attributes:* hf.AffiliationMgr:1 hf.Registrar.Roles:peer,orderer,client,user]  }]} Affiliations:map[org2:[department1] org1:[department1 department2]] LDAP:{ Enabled:false URL:ldap://****:****@<host>:<port>/<base> UserFilter:(uid=%s) GroupFilter:(memberUid=%s) Attribute:{[uid member] [{ }] map[groups:[{ }]]} TLS:{false [] { }}  } DB:{ Type:sqlite3 Datasource:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/fabric-ca-server.db TLS:{false [] { }}  } CSP:0xc4202e7530 Client:<nil> Intermediate:{ParentServer:{ URL: CAName:  } TLS:{Enabled:false CertFiles:[] Client:{KeyFile: CertFile:}} Enrollment:{ Name: Secret:**** Profile: Label: CSR:<nil> CAName: AttrReqs:[]  }} CRL:{Expiry:24h0m0s}}
+2018/04/19 15:55:44 [DEBUG] DB: Getting identity admin
+2018/04/19 15:55:44 [DEBUG] DB: Login user admin with max enrollments of -1 and state of 1
+2018/04/19 15:55:44 [DEBUG] DB: identity admin successfully logged in
+2018/04/19 15:55:44 [DEBUG] Processing sign request: id=admin, CommonName=admin, Subject=<nil>
+2018/04/19 15:55:44 [DEBUG] Request is not for a CA signing certificate
+2018/04/19 15:55:44 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/19 15:55:44 [DEBUG] DB: Getting identity admin
+2018/04/19 15:55:44 [DEBUG] Finished processing sign request
+2018/04/19 15:55:44 [DEBUG] DB: Getting identity admin
+2018/04/19 15:55:44 [INFO] signed certificate with serial number 138231232710875500386468111491663682474152007859
+2018/04/19 15:55:44 [DEBUG] DB: Insert Certificate
+2018/04/19 15:55:44 [DEBUG] Saved serial number as hex 183680bae5a78d0e206d04e7f33200625ba798b3
+2018/04/19 15:55:44 [DEBUG] saved certificate with serial number 138231232710875500386468111491663682474152007859
+2018/04/19 15:55:44 [DEBUG] Successfully incremented state for identity admin to 2
+2018/04/19 15:55:44 [INFO] 127.0.0.1:34332 POST /enroll 201 0 "OK"
+2018/04/19 15:55:44 [DEBUG] Received request for /register
+2018/04/19 15:55:44 [DEBUG] Checking for revocation/expiration of certificate owned by 'admin'
+2018/04/19 15:55:44 [DEBUG] DB: Get certificate by serial (183680bae5a78d0e206d04e7f33200625ba798b3) and aki (a191956f7c1f2d0dbd5b3eefbb7f60833f770fd8)
+2018/04/19 15:55:44 [DEBUG] Successful token authentication of 'admin'
+2018/04/19 15:55:44 [DEBUG] Received registration request from admin: { Name:nodeAdmin Type:user Secret:**** MaxEnrollments:0 Affiliation:org1 Attributes:[] CAName:  }
+2018/04/19 15:55:44 [DEBUG] DB: Getting identity admin
+2018/04/19 15:55:44 [DEBUG] canRegister - Check to see if user 'admin' can register
+2018/04/19 15:55:44 [DEBUG] Checking to see if caller 'admin' is a registrar
+2018/04/19 15:55:44 [DEBUG] Validate Affiliation
+2018/04/19 15:55:44 [DEBUG] Checking to see if affiliation 'org1' contains caller's affiliation ''
+2018/04/19 15:55:44 [DEBUG] Caller has root affiliation
+2018/04/19 15:55:44 [DEBUG] Validate ID
+2018/04/19 15:55:44 [DEBUG] Validating affiliation: org1
+2018/04/19 15:55:44 [DEBUG] DB: Get affiliation org1
+2018/04/19 15:55:44 [DEBUG] Registering user id: nodeAdmin
+2018/04/19 15:55:44 [DEBUG] Max enrollment value verification - User specified max enrollment: 0, CA max enrollment: -1
+2018/04/19 15:55:44 [DEBUG] DB: Getting identity nodeAdmin
+2018/04/19 15:55:44 [DEBUG] DB: Add identity nodeAdmin
+2018/04/19 15:55:44 [DEBUG] Successfully added identity nodeAdmin to the database
+2018/04/19 15:55:44 [INFO] 127.0.0.1:34334 POST /register 201 0 "OK"
+2018/04/19 15:55:44 [DEBUG] Received request for /enroll
+2018/04/19 15:55:44 [DEBUG] ca.Config: &{Version:1.1.1-snapshot-e656889 Cfg:{Identities:{AllowRemove:false} Affiliations:{AllowRemove:false}} CA:{Name: Keyfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-key.pem Certfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-cert.pem Chainfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-chain.pem} Signing:0xc42030d930 CSR:{CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[frank-VirtualBox localhost] KeyRequest:0xc4203225c0 CA:0xc4202d9c00 SerialNumber:} Registry:{MaxEnrollments:-1 Identities:[{ Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:0 Attrs:map[hf.AffiliationMgr:1 hf.Registrar.Roles:peer,orderer,client,user hf.Registrar.DelegateRoles:peer,orderer,client,user hf.Revoker:1 hf.IntermediateCA:1 hf.GenCRL:1 hf.Registrar.Attributes:*]  }]} Affiliations:map[org1:[department1 department2] org2:[department1]] LDAP:{ Enabled:false URL:ldap://****:****@<host>:<port>/<base> UserFilter:(uid=%s) GroupFilter:(memberUid=%s) Attribute:{[uid member] [{ }] map[groups:[{ }]]} TLS:{false [] { }}  } DB:{ Type:sqlite3 Datasource:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/fabric-ca-server.db TLS:{false [] { }}  } CSP:0xc4202e7530 Client:<nil> Intermediate:{ParentServer:{ URL: CAName:  } TLS:{Enabled:false CertFiles:[] Client:{KeyFile: CertFile:}} Enrollment:{ Name: Secret:**** Profile: Label: CSR:<nil> CAName: AttrReqs:[]  }} CRL:{Expiry:24h0m0s}}
+2018/04/19 15:55:44 [DEBUG] DB: Getting identity nodeAdmin
+2018/04/19 15:55:44 [DEBUG] DB: Login user nodeAdmin with max enrollments of -1 and state of 0
+2018/04/19 15:55:44 [DEBUG] DB: identity nodeAdmin successfully logged in
+2018/04/19 15:55:44 [DEBUG] Processing sign request: id=nodeAdmin, CommonName=nodeAdmin, Subject=<nil>
+2018/04/19 15:55:44 [DEBUG] Request is not for a CA signing certificate
+2018/04/19 15:55:44 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/19 15:55:44 [DEBUG] DB: Getting identity nodeAdmin
+2018/04/19 15:55:44 [DEBUG] Finished processing sign request
+2018/04/19 15:55:44 [DEBUG] DB: Getting identity nodeAdmin
+2018/04/19 15:55:44 [DEBUG] Attribute extension being added to certificate is: &{ID:[1 2 3 4 5 6 7 8 1] Critical:false Value:7b226174747273223a7b2268662e416666696c696174696f6e223a226f726731222c2268662e456e726f6c6c6d656e744944223a226e6f646541646d696e222c2268662e54797065223a2275736572227d7d}
+2018/04/19 15:55:44 [DEBUG] Adding attribute extension to CSR: &{ID:[1 2 3 4 5 6 7 8 1] Critical:false Value:7b226174747273223a7b2268662e416666696c696174696f6e223a226f726731222c2268662e456e726f6c6c6d656e744944223a226e6f646541646d696e222c2268662e54797065223a2275736572227d7d}
+2018/04/19 15:55:44 [INFO] signed certificate with serial number 560867594273623540413818440846904009321422106769
+2018/04/19 15:55:44 [DEBUG] DB: Insert Certificate
+2018/04/19 15:55:44 [DEBUG] Saved serial number as hex 623e2c3991e041353d6bb6c99a9abb8db679b091
+2018/04/19 15:55:44 [DEBUG] saved certificate with serial number 560867594273623540413818440846904009321422106769
+2018/04/19 15:55:44 [DEBUG] Successfully incremented state for identity nodeAdmin to 1
+2018/04/19 15:55:44 [INFO] 127.0.0.1:34336 POST /enroll 201 0 "OK"
+2018/04/19 15:55:44 [DEBUG] Received request for /register
+2018/04/19 15:55:44 [DEBUG] Checking for revocation/expiration of certificate owned by 'admin'
+2018/04/19 15:55:44 [DEBUG] DB: Get certificate by serial (183680bae5a78d0e206d04e7f33200625ba798b3) and aki (a191956f7c1f2d0dbd5b3eefbb7f60833f770fd8)
+2018/04/19 15:55:44 [DEBUG] Successful token authentication of 'admin'
+2018/04/19 15:55:44 [DEBUG] Received registration request from admin: { Name:User1@pcxchg.com Type:user Secret:**** MaxEnrollments:0 Affiliation:org1 Attributes:[] CAName:  }
+2018/04/19 15:55:44 [DEBUG] DB: Getting identity admin
+2018/04/19 15:55:44 [DEBUG] canRegister - Check to see if user 'admin' can register
+2018/04/19 15:55:44 [DEBUG] Checking to see if caller 'admin' is a registrar
+2018/04/19 15:55:44 [DEBUG] Validate Affiliation
+2018/04/19 15:55:44 [DEBUG] Checking to see if affiliation 'org1' contains caller's affiliation ''
+2018/04/19 15:55:44 [DEBUG] Caller has root affiliation
+2018/04/19 15:55:44 [DEBUG] Validate ID
+2018/04/19 15:55:44 [DEBUG] Validating affiliation: org1
+2018/04/19 15:55:44 [DEBUG] DB: Get affiliation org1
+2018/04/19 15:55:44 [DEBUG] Registering user id: User1@pcxchg.com
+2018/04/19 15:55:44 [DEBUG] Max enrollment value verification - User specified max enrollment: 0, CA max enrollment: -1
+2018/04/19 15:55:44 [DEBUG] DB: Getting identity User1@pcxchg.com
+2018/04/19 15:55:44 [DEBUG] DB: Add identity User1@pcxchg.com
+2018/04/19 15:55:45 [DEBUG] Successfully added identity User1@pcxchg.com to the database
+2018/04/19 15:55:45 [INFO] 127.0.0.1:34338 POST /register 201 0 "OK"
+2018/04/19 15:55:45 [DEBUG] Received request for /enroll
+2018/04/19 15:55:45 [DEBUG] ca.Config: &{Version:1.1.1-snapshot-e656889 Cfg:{Identities:{AllowRemove:false} Affiliations:{AllowRemove:false}} CA:{Name: Keyfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-key.pem Certfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-cert.pem Chainfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-chain.pem} Signing:0xc42030d930 CSR:{CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[frank-VirtualBox localhost] KeyRequest:0xc4203225c0 CA:0xc4202d9c00 SerialNumber:} Registry:{MaxEnrollments:-1 Identities:[{ Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:0 Attrs:map[hf.Registrar.Roles:peer,orderer,client,user hf.Registrar.DelegateRoles:peer,orderer,client,user hf.Revoker:1 hf.IntermediateCA:1 hf.GenCRL:1 hf.Registrar.Attributes:* hf.AffiliationMgr:1]  }]} Affiliations:map[org1:[department1 department2] org2:[department1]] LDAP:{ Enabled:false URL:ldap://****:****@<host>:<port>/<base> UserFilter:(uid=%s) GroupFilter:(memberUid=%s) Attribute:{[uid member] [{ }] map[groups:[{ }]]} TLS:{false [] { }}  } DB:{ Type:sqlite3 Datasource:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/fabric-ca-server.db TLS:{false [] { }}  } CSP:0xc4202e7530 Client:<nil> Intermediate:{ParentServer:{ URL: CAName:  } TLS:{Enabled:false CertFiles:[] Client:{KeyFile: CertFile:}} Enrollment:{ Name: Secret:**** Profile: Label: CSR:<nil> CAName: AttrReqs:[]  }} CRL:{Expiry:24h0m0s}}
+2018/04/19 15:55:45 [DEBUG] DB: Getting identity User1@pcxchg.com
+2018/04/19 15:55:45 [DEBUG] DB: Login user User1@pcxchg.com with max enrollments of -1 and state of 0
+2018/04/19 15:55:45 [DEBUG] DB: identity User1@pcxchg.com successfully logged in
+2018/04/19 15:55:45 [DEBUG] Processing sign request: id=User1@pcxchg.com, CommonName=User1@pcxchg.com, Subject=<nil>
+2018/04/19 15:55:45 [DEBUG] Request is not for a CA signing certificate
+2018/04/19 15:55:45 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/19 15:55:45 [DEBUG] DB: Getting identity User1@pcxchg.com
+2018/04/19 15:55:45 [DEBUG] Finished processing sign request
+2018/04/19 15:55:45 [DEBUG] DB: Getting identity User1@pcxchg.com
+2018/04/19 15:55:45 [DEBUG] Attribute extension being added to certificate is: &{ID:[1 2 3 4 5 6 7 8 1] Critical:false Value:7b226174747273223a7b2268662e416666696c696174696f6e223a226f726731222c2268662e456e726f6c6c6d656e744944223a225573657231407063786368672e636f6d222c2268662e54797065223a2275736572227d7d}
+2018/04/19 15:55:45 [DEBUG] Adding attribute extension to CSR: &{ID:[1 2 3 4 5 6 7 8 1] Critical:false Value:7b226174747273223a7b2268662e416666696c696174696f6e223a226f726731222c2268662e456e726f6c6c6d656e744944223a225573657231407063786368672e636f6d222c2268662e54797065223a2275736572227d7d}
+2018/04/19 15:55:45 [INFO] signed certificate with serial number 55321054142609800858534133717100176146890529343
+2018/04/19 15:55:45 [DEBUG] DB: Insert Certificate
+2018/04/19 15:55:45 [DEBUG] Saved serial number as hex 9b0ae8e90bff9c9ed7333361112f326a4949a3f
+2018/04/19 15:55:45 [DEBUG] saved certificate with serial number 55321054142609800858534133717100176146890529343
+2018/04/19 15:55:45 [DEBUG] Successfully incremented state for identity User1@pcxchg.com to 1
+2018/04/19 15:55:45 [INFO] 127.0.0.1:34340 POST /enroll 201 0 "OK"
+2018/04/19 15:55:45 [DEBUG] Received request for /enroll
+2018/04/19 15:55:45 [DEBUG] ca.Config: &{Version:1.1.1-snapshot-e656889 Cfg:{Identities:{AllowRemove:false} Affiliations:{AllowRemove:false}} CA:{Name: Keyfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-key.pem Certfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-cert.pem Chainfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-chain.pem} Signing:0xc42030d930 CSR:{CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[frank-VirtualBox localhost] KeyRequest:0xc4203225c0 CA:0xc4202d9c00 SerialNumber:} Registry:{MaxEnrollments:-1 Identities:[{ Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:0 Attrs:map[hf.Registrar.DelegateRoles:peer,orderer,client,user hf.Revoker:1 hf.IntermediateCA:1 hf.GenCRL:1 hf.Registrar.Attributes:* hf.AffiliationMgr:1 hf.Registrar.Roles:peer,orderer,client,user]  }]} Affiliations:map[org1:[department1 department2] org2:[department1]] LDAP:{ Enabled:false URL:ldap://****:****@<host>:<port>/<base> UserFilter:(uid=%s) GroupFilter:(memberUid=%s) Attribute:{[uid member] [{ }] map[groups:[{ }]]} TLS:{false [] { }}  } DB:{ Type:sqlite3 Datasource:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/fabric-ca-server.db TLS:{false [] { }}  } CSP:0xc4202e7530 Client:<nil> Intermediate:{ParentServer:{ URL: CAName:  } TLS:{Enabled:false CertFiles:[] Client:{KeyFile: CertFile:}} Enrollment:{ Name: Secret:**** Profile: Label: CSR:<nil> CAName: AttrReqs:[]  }} CRL:{Expiry:24h0m0s}}
+2018/04/19 15:55:45 [DEBUG] DB: Getting identity admin
+2018/04/19 15:55:45 [DEBUG] DB: Login user admin with max enrollments of -1 and state of 2
+2018/04/19 15:55:45 [DEBUG] DB: identity admin successfully logged in
+2018/04/19 15:55:45 [DEBUG] Processing sign request: id=admin, CommonName=admin, Subject=<nil>
+2018/04/19 15:55:45 [DEBUG] Request is not for a CA signing certificate
+2018/04/19 15:55:45 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/19 15:55:45 [DEBUG] DB: Getting identity admin
+2018/04/19 15:55:45 [DEBUG] Finished processing sign request
+2018/04/19 15:55:45 [DEBUG] DB: Getting identity admin
+2018/04/19 15:55:45 [INFO] signed certificate with serial number 33029299750269536542172403395439545303276308824
+2018/04/19 15:55:45 [DEBUG] DB: Insert Certificate
+2018/04/19 15:55:45 [DEBUG] Saved serial number as hex 5c915c42b8e985c2878e4de00bd82c3f9a5c958
+2018/04/19 15:55:45 [DEBUG] saved certificate with serial number 33029299750269536542172403395439545303276308824
+2018/04/19 15:55:45 [DEBUG] Successfully incremented state for identity admin to 3
+2018/04/19 15:55:45 [INFO] 127.0.0.1:34342 POST /enroll 201 0 "OK"
+2018/04/19 15:55:45 [DEBUG] Received request for /register
+2018/04/19 15:55:45 [DEBUG] Checking for revocation/expiration of certificate owned by 'admin'
+2018/04/19 15:55:45 [DEBUG] DB: Get certificate by serial (183680bae5a78d0e206d04e7f33200625ba798b3) and aki (a191956f7c1f2d0dbd5b3eefbb7f60833f770fd8)
+2018/04/19 15:55:45 [DEBUG] Successful token authentication of 'admin'
+2018/04/19 15:55:45 [DEBUG] Received registration request from admin: { Name:orderer.pcxchg.com Type:user Secret:**** MaxEnrollments:0 Affiliation:org1 Attributes:[] CAName:  }
+2018/04/19 15:55:45 [DEBUG] DB: Getting identity admin
+2018/04/19 15:55:45 [DEBUG] canRegister - Check to see if user 'admin' can register
+2018/04/19 15:55:45 [DEBUG] Checking to see if caller 'admin' is a registrar
+2018/04/19 15:55:45 [DEBUG] Validate Affiliation
+2018/04/19 15:55:45 [DEBUG] Checking to see if affiliation 'org1' contains caller's affiliation ''
+2018/04/19 15:55:45 [DEBUG] Caller has root affiliation
+2018/04/19 15:55:45 [DEBUG] Validate ID
+2018/04/19 15:55:45 [DEBUG] Validating affiliation: org1
+2018/04/19 15:55:45 [DEBUG] DB: Get affiliation org1
+2018/04/19 15:55:45 [DEBUG] Registering user id: orderer.pcxchg.com
+2018/04/19 15:55:45 [DEBUG] Max enrollment value verification - User specified max enrollment: 0, CA max enrollment: -1
+2018/04/19 15:55:45 [DEBUG] DB: Getting identity orderer.pcxchg.com
+2018/04/19 15:55:45 [DEBUG] DB: Add identity orderer.pcxchg.com
+2018/04/19 15:55:45 [DEBUG] Successfully added identity orderer.pcxchg.com to the database
+2018/04/19 15:55:45 [INFO] 127.0.0.1:34344 POST /register 201 0 "OK"
+2018/04/19 15:55:45 [DEBUG] Received request for /enroll
+2018/04/19 15:55:45 [DEBUG] ca.Config: &{Version:1.1.1-snapshot-e656889 Cfg:{Identities:{AllowRemove:false} Affiliations:{AllowRemove:false}} CA:{Name: Keyfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-key.pem Certfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-cert.pem Chainfile:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/ca-chain.pem} Signing:0xc42030d930 CSR:{CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[frank-VirtualBox localhost] KeyRequest:0xc4203225c0 CA:0xc4202d9c00 SerialNumber:} Registry:{MaxEnrollments:-1 Identities:[{ Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:0 Attrs:map[hf.IntermediateCA:1 hf.GenCRL:1 hf.Registrar.Attributes:* hf.AffiliationMgr:1 hf.Registrar.Roles:peer,orderer,client,user hf.Registrar.DelegateRoles:peer,orderer,client,user hf.Revoker:1]  }]} Affiliations:map[org1:[department1 department2] org2:[department1]] LDAP:{ Enabled:false URL:ldap://****:****@<host>:<port>/<base> UserFilter:(uid=%s) GroupFilter:(memberUid=%s) Attribute:{[uid member] [{ }] map[groups:[{ }]]} TLS:{false [] { }}  } DB:{ Type:sqlite3 Datasource:/home/frank/block/hlf/pcxchg/crypto-config/ordererOrganizations/pcxchg.com/ca/root/fabric-ca-server.db TLS:{false [] { }}  } CSP:0xc4202e7530 Client:<nil> Intermediate:{ParentServer:{ URL: CAName:  } TLS:{Enabled:false CertFiles:[] Client:{KeyFile: CertFile:}} Enrollment:{ Name: Secret:**** Profile: Label: CSR:<nil> CAName: AttrReqs:[]  }} CRL:{Expiry:24h0m0s}}
+2018/04/19 15:55:45 [DEBUG] DB: Getting identity orderer.pcxchg.com
+2018/04/19 15:55:45 [DEBUG] DB: Login user orderer.pcxchg.com with max enrollments of -1 and state of 0
+2018/04/19 15:55:45 [DEBUG] DB: identity orderer.pcxchg.com successfully logged in
+2018/04/19 15:55:45 [DEBUG] Processing sign request: id=orderer.pcxchg.com, CommonName=orderer.pcxchg.com, Subject=<nil>
+2018/04/19 15:55:45 [DEBUG] Request is not for a CA signing certificate
+2018/04/19 15:55:45 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/19 15:55:45 [DEBUG] DB: Getting identity orderer.pcxchg.com
+2018/04/19 15:55:45 [DEBUG] Finished processing sign request
+2018/04/19 15:55:45 [DEBUG] DB: Getting identity orderer.pcxchg.com
+2018/04/19 15:55:45 [DEBUG] Attribute extension being added to certificate is: &{ID:[1 2 3 4 5 6 7 8 1] Critical:false Value:7b226174747273223a7b2268662e416666696c696174696f6e223a226f726731222c2268662e456e726f6c6c6d656e744944223a226f7264657265722e7063786368672e636f6d222c2268662e54797065223a2275736572227d7d}
+2018/04/19 15:55:45 [DEBUG] Adding attribute extension to CSR: &{ID:[1 2 3 4 5 6 7 8 1] Critical:false Value:7b226174747273223a7b2268662e416666696c696174696f6e223a226f726731222c2268662e456e726f6c6c6d656e744944223a226f7264657265722e7063786368672e636f6d222c2268662e54797065223a2275736572227d7d}
+2018/04/19 15:55:45 [INFO] signed certificate with serial number 654255864046161226304774081244631288589864389901
+2018/04/19 15:55:45 [DEBUG] DB: Insert Certificate
+2018/04/19 15:55:45 [DEBUG] Saved serial number as hex 7299d8fc72509f87905e8a9add867236778fcd0d
+2018/04/19 15:55:45 [DEBUG] saved certificate with serial number 654255864046161226304774081244631288589864389901
+2018/04/19 15:55:45 [DEBUG] Successfully incremented state for identity orderer.pcxchg.com to 1
+2018/04/19 15:55:45 [INFO] 127.0.0.1:34346 POST /enroll 201 0 "OK"
+2018/04/19 15:55:46 [DEBUG] Received request for /cainfo
+2018/04/19 15:55:46 [INFO] 127.0.0.1:34348 POST /cainfo 200 0 "OK"

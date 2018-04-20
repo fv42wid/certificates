@@ -1,0 +1,3 @@
+2018/04/19 15:55:54 [INFO] Configuration file location: /home/frank/block/hlf/pcxchg/crypto-config/peerOrganizations/Amazon.com/fabric-ca-client-config.yaml
+2018/04/19 15:55:54 [INFO] Stored root CA certificate at /home/frank/block/hlf/pcxchg/crypto-config/peerOrganizations/Amazon.com/msp/cacerts/localhost-7104.pem
+2018/04/19 15:55:54 [INFO] Stored intermediate CA certificates at /home/frank/block/hlf/pcxchg/crypto-config/peerOrganizations/Amazon.com/msp/intermediatecerts/localhost-7104.pem
